@@ -60,7 +60,7 @@ def search(engine, query):
     
     return result
 
-def super_search(query):
+def super_search(query, engines):
     result = []
 
     # start searching

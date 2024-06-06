@@ -19,9 +19,11 @@ def result_to_csv(result):
 
     data = []
     for r in result:
-        row = [r.title, r.link, r.engine]
+        row = [r['title'], r['link'], r['engine']]
         data.append(row)
     
-    with open(f'../datas/{filename}', mode='w') as file:
-        csv_writer = csv.writer(file)
-        csv_writer.writerows(data)
+    f = open(f'./datas/{filename}', mode='w')
+    f.write('')
+    csv_writer = csv.writer(f)
+    csv_writer.writerows(data)
+    f.close()
