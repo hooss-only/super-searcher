@@ -1,6 +1,6 @@
 # Super Searcher
 Scrap search results from many popular search engines.<br>
-It ignore same results.<br>
+It ignores same results.<br>
 - Google
 - Bing
 - Yahoo
