@@ -18,6 +18,8 @@ def search():
 
     data.result_to_csv(result)
 
+    mb.showinfo(title='good!', message='successfully made a data in datas folder')
+
 window = tkinter.Tk()
 
 window.title('SUPER SEARCHER - hooss-only')
@@ -44,5 +46,8 @@ query_box.pack()
 
 search_button = tkinter.Button(search_frame, text='search', command=search)
 search_button.pack()
+
+credit = tkinter.Label(window, text='made by hooss-only')
+credit.pack(side='bottom')
 
 window.mainloop()

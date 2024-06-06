@@ -65,7 +65,12 @@ def super_search(query, engines):
 
     # start searching
     for engine in engines:
-        result += search(engine, query)
+        print(f"searching in {engine['name']}...")
+        try:
+            result += search(engine, query)
+            print('good!')
+        except:
+            print('error on ' + engine['name'])
     
     # filter out same reuslts
     urls = []
