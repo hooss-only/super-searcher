@@ -75,4 +75,5 @@ def super_search(query):
             result.remove(r)
         else:
             urls.append(r['link'])
-
+    
+    return result
